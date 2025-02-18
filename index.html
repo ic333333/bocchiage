@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantos anos você tem?</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="area">
+        <h1>Que ano você nasceu?</h1>
+
+        <input type="number" name="txtn" id="txtn" />
+
+        <input
+          type="button"
+          value="Confirmar"
+          class="botao"
+          onclick="confirmar()"
+        />
+
+        <div id="res"></div>
+
+        <div id="img"></div>
+      </div>
+    </main>
+
+    <script>
+      function confirmar() {
+        var ano = window.document.querySelector("input#txtn").value;
+
+        var anoAtual = "2025";
+
+        var anoconvert = Number(ano.value);
+
+        var idade = anoAtual - ano;
+
+        res.innerHTML = `<p>Você tem ou vai fazer: <strong>${idade}</strong> anos de idade!</p>`;
+
+        img.innerHTML = `<img class="bocchi" src="https://i.imgur.com/SDjL60y.png" alt="bocchi">`;
+      }
+
+      //   Chat GPT me salvou..
+    </script>
+  </body>
+</html>

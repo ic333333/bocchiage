@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(163, 94, 209);
+  color: white;
+  font-family: monospace, serif;
+}
+
+.botao {
+  margin: 10px;
+}
+
+.bocchi {
+  width: 200px;
+}
+
+.area {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
